@@ -6,6 +6,16 @@
         min-width: 423px;
         padding: 90px 0 75px;
         text-align: center;
+        @include breakpoint(ex-small) {
+            margin-top: 0;
+        }
+        @include breakpoint(v-ex-small) {
+            background: none;
+            margin: 0 auto;
+            padding: 0 0 30px 0;
+            min-width: 290px;
+            text-align: center;
+        }
         h1 {
             font-family: 'Ewert', sans-serif;
             font-size: 40px;
@@ -49,37 +59,45 @@
         max-width: 1169px;
         padding: 23px 23px 22px;
         z-index: 1;
+        @include breakpoint(middle) {
+            position: relative;
+            width: 67%;
+            top: 0;
+        }
 
-
-        .left-part{
+        .left-part {
             padding-right: 0;
-        .carousel1 {
-            @include breakpoint(large) {
-                height: 488px;
-
-                img{
+            .carousel1 {
+                @include breakpoint(large) {
                     height: 488px;
+
+                    img {
+                        height: 488px;
+                    }
                 }
             }
         }
-    }
         .right-part {
             padding-left: 0;
+            @include breakpoint(middle) {
+                width: 100%;
+                float: none;
+            }
             .share {
                 float: right;
                 figure {
                     font-size: 0;
                     &:last-child {
-                        img{
+                        img {
                             float: left;
                         }
-                            figcaption {
-                                background: #567721;
-                            }
+                        figcaption {
+                            background: #567721;
+                        }
                     }
                     img {
                         width: 51%;
-                        @include breakpoint(large){
+                        @include breakpoint(large) {
                             height: 244px;
                         }
                     }

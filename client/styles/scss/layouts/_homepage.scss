@@ -5,4 +5,5 @@
     @import "testimonials";
     @import "menu";
     @import "news-block";
+    @include user-select(none);
 }

@@ -83,12 +83,15 @@ footer {
                 }
 
                 span {
-                    font-size: 24px;
-                    line-height: 36px;
-                    font-weight: 700;
-                    color: #282828;
+                    a {
+                        font-size: 24px;
+                        line-height: 36px;
+                        font-weight: 700;
+                        color: #282828;
+                        text-decoration: none;
+                    }
                 }
-                a{
+                a {
                     font-size: 18px;
                     line-height: 30px;
                     text-decoration: none;
@@ -96,7 +99,7 @@ footer {
                     @include transition-property(all);
                     @include transition-duration(300ms);
 
-                    &:hover{
+                    &:hover {
                         color: #e1481e;
                     }
                 }
