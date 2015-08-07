@@ -1,0 +1,68 @@
+.news-block {
+    padding: 50px 0 66px;
+    background: url("../../images/testimonials/content.jpg");
+
+    h2 {
+        font-family: "Maiden Orange", sans-serif;
+        font-size: 40px;
+        line-height: 42px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #e7e0d2;
+    }
+    .post-wrapper {
+        margin-top: 42px;
+        color: #fff;
+
+        .news {
+            time {
+                float: left;
+                font-family: "Maiden Orange", sans-serif;
+                font-size: 39px;
+                padding-top: 27px;
+                border-top: 8px solid #a73f07;
+            }
+
+            h4 {
+                padding: 11px 0 0 20px;
+                overflow: hidden;
+                a {
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: #fff;
+                    @include transition-property(all);
+                    @include transition-duration(300ms);
+
+                    &:hover {
+                        color: #762d05;
+                    }
+                }
+            }
+            p {
+                padding: 7px 0 0 20px;
+                overflow: hidden;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+    .btt {
+        position: relative;
+        margin: 84px 0 0;
+    }
+    .button {
+        position: absolute;
+        top: -45px;
+        left: 45%;
+        background: #e7e0d2;
+        color: #5a5045;
+        @include transition-property(all);
+        @include transition-duration(400ms);
+
+        &:hover {
+            background-color: #a73f07;
+            color: #fff;
+        }
+    }
+}

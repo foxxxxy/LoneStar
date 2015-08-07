@@ -1,0 +1,85 @@
+.offers {
+    padding: 120px 0 200px;
+    .features {
+        h2 {
+            font-family: 'Maiden Orange', sans-serif;
+            font-size: 60px;
+            line-height: 54px;
+            color: #fff;
+            text-align: left;
+            text-transform: uppercase;
+            span {
+                font-size: 100px;
+                line-height: 88px;
+                color: #ffe17a;
+            }
+
+            &::after {
+                content: "-------------------";
+                display: block;
+                margin: 12px 0 6px;
+                font-size: 36px;
+                color: #feddc0;
+                opacity: 0.33;
+            }
+        }
+        p {
+            font-size: 24px;
+            line-height: 28px;
+            color: #D4CAB4;
+        }
+        .organic {
+            background: #6f6859;
+
+            &:hover {
+                background-color: #a73f07;
+            }
+        }
+    }
+    h2 {
+        font-family: 'Maiden Orange', sans-serif;
+        font-size: 40px;
+        line-height: 42px;
+        text-transform: uppercase;
+        color: #e7e0d2;
+
+        span {
+            color: #D5382C;
+        }
+    }
+    figure {
+        text-align: center;
+        figcaption {
+            h3 {
+                margin-top: 28px;
+                font-family: 'Maiden Orange', sans-serif;
+                font-size: 28px;
+                line-height: 30px;
+                color: #fbf1cf;
+                text-transform: uppercase;
+
+                &::before {
+                    content: url("../../images/offers/element-1.png");
+                    padding: 0 5px;
+                }
+                &::after {
+                    content: url("../../images/offers/element-1.png");
+                    padding: 0 5px;
+                }
+            }
+            p{
+                margin-top: 20px;
+                min-width: 260px;
+                font-size: 18px;
+                line-height: 22px;
+                color: #eae3d5;
+            }
+        }
+    }
+}
+
+.parallax {
+    .parallax_image {
+        opacity: 1;
+    }
+}

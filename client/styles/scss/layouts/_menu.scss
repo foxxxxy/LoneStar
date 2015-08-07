@@ -1,0 +1,162 @@
+.menu {
+    padding: 60px 0 39px;
+    background: url("../../images/menu/menu-bg.jpg");
+
+    h2 {
+        font-family: "Maiden Orange", sans-serif;
+        font-size: 40px;
+        line-height: 42px;
+        color: #e7e0d2;
+        text-transform: uppercase;
+        text-align: center;
+
+        &::before {
+            content: url("../../images/menu/element-2.png");
+            margin: 15px;
+        }
+        &::after {
+            content: url("../../images/menu/element-2.png");
+            margin: 15px;
+        }
+    }
+    .resp-tabs {
+        font-size: 0;
+        text-align: center;
+        .resp-tabs-list {
+            display: inline-block;
+            margin-top: 44px;
+            @include breakpoint(ex-small){
+                display: none;
+            }
+
+            li {
+                position: relative;
+                float: left;
+                cursor: pointer;
+                margin-left: 8px;
+                padding: 14px 35px 12px;
+                background: #a73f07;
+                font-family: "Maiden Orange", sans-serif;
+                font-size: 16px;
+                line-height: 18px;
+                color: #fff;
+                text-transform: uppercase;
+                @include border-radius(3px);
+                @include transition-property(all);
+                @include transition-duration(300ms);
+                @include breakpoint(small){
+                    padding: 0 20px;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    bottom: -5px;
+                    left: 50%;
+                    margin-left: -5px;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 5px 5px 0 5px;
+                    border-color: #718d3b transparent transparent transparent;
+                }
+
+                &:hover {
+                    background: #718d3b;
+                }
+            }
+            .resp-tab-active {
+                background: #718d3b;
+
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+    .resp-tabs-container {
+        margin-top: 44px;
+
+        .resp-accordion {
+            position: relative;
+            display: none;
+            cursor: pointer;
+            margin-top: 10px;
+            padding: 14px 35px 12px;
+            background: #a73f07;
+            font-family: "Maiden Orange", sans-serif;
+            font-size: 16px;
+            line-height: 18px;
+            color: #fff;
+            text-transform: uppercase;
+            @include border-radius(3px);
+            @include transition-property(all);
+            @include transition-duration(300ms);
+            @include breakpoint(ex-small){
+                display: block;
+            }
+
+            & + * {
+                margin-top: 20px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: none;
+                bottom: -5px;
+                left: 50%;
+                margin-left: -5px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 5px 5px 0 5px;
+                border-color: #718d3b transparent transparent transparent;
+            }
+        }
+        .resp-tab-content {
+            position: absolute;
+            opacity: 0;
+            z-index: -999;
+            left: 0;
+            right: 0;
+        }
+
+        .resp-tab-content-active{
+            position: relative;
+            opacity: 1;
+            z-index: 11;
+            display: block;
+        }
+    }
+    .carousel2 {
+        @include breakpoint(middle) {
+            text-align: center;
+            margin: 0 auto;
+        }
+        img + img {
+            margin-top: 30px;
+        }
+        .item {
+            margin-left: 0;
+            @include breakpoint(middle) {
+                width: 240px !important;
+                display: inline-block;
+            }
+            @include breakpoint(ex-small) {
+                margin-left: 10px;
+                width: 200px !important;
+            }
+        }
+        .owl-nav .owl-next, .owl-nav .owl-prev {
+            @include breakpoint(ex-small) {
+                margin-left: 0;
+            }
+        }
+    }
+}

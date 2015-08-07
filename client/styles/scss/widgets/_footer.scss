@@ -1,0 +1,106 @@
+footer {
+    background: url("../../images/testimonials/content.jpg");
+
+    .privacy {
+        display: inline-block;
+        font-family: "Maiden Orange", sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #e7e0d2;
+
+        a {
+            margin-left: 21px;
+            text-decoration: none;
+            color: #e7e0d2;
+            @include transition-property(all);
+            @include transition-duration(300ms);
+
+            &:hover {
+                color: #a73f07;
+            }
+        }
+    }
+    ul {
+        float: right;
+        li {
+            float: left;
+            margin-left: 16px;
+            a {
+                font-size: 33px;
+                line-height: 26px;
+                color: #e7e0d2;
+                @include transition-property(all);
+                @include transition-duration(300ms);
+
+                &:hover {
+                    color: #a73f07;
+                }
+            }
+        }
+    }
+    .map {
+        position: relative;
+        padding-top: 60px;
+        line-height: 26px;
+
+        .information-wrapper {
+            position: absolute;
+            right: 80px;
+            top: 108px;
+            padding: 14px;
+            background: #f6f4ef;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            color: #787765;
+
+            .address {
+                float: left;
+                padding: 24px 43px 22px 30px;
+                border: 1px solid #c9bf96;
+                border-right: 2px dashed #c9bf96;
+                color: #5e4c38;
+                font-size: 20px;
+                line-height: 30px;
+
+                &:before {
+                    content: url("../../images/footer/element-3.png");
+                    display: block;
+                    margin-bottom: 17px;
+                }
+            }
+            .contacts {
+                float: right;
+                padding: 24px 40px 22px 40px;
+                border: 1px solid #c9bf96;
+                border-left: none;
+
+                &:before {
+                    content: url("../../images/footer/element-4.png");
+                    display: block;
+                    margin-bottom: 12px;
+                }
+
+                span {
+                    font-size: 24px;
+                    line-height: 36px;
+                    font-weight: 700;
+                    color: #282828;
+                }
+                a{
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-decoration: none;
+                    color: #e76d4b;
+                    @include transition-property(all);
+                    @include transition-duration(300ms);
+
+                    &:hover{
+                        color: #e1481e;
+                    }
+                }
+            }
+        }
+    }
+}

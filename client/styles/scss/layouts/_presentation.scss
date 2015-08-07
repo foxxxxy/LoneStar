@@ -1,0 +1,153 @@
+.presentation {
+    background: url("../../images/presentation/header.jpg");
+    .brand {
+        margin-top: 68px;
+        background: url("../../images/presentation/logo.png") no-repeat top center;
+        min-width: 423px;
+        padding: 90px 0 75px;
+        text-align: center;
+        h1 {
+            font-family: 'Ewert', sans-serif;
+            font-size: 40px;
+            line-height: 42px;
+            overflow: hidden;
+            vertical-align: top;
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                span {
+                    &::before {
+                        content: url("../../images/presentation/separator-02.png");
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+        span {
+            font-family: 'Cabin', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            color: #fff;
+            line-height: 26px;
+        }
+        p {
+            margin-top: 44px;
+            font-size: 26px;
+            font-family: 'Yellowtail', sans-serif;
+            color: #fff;
+        }
+    }
+    .advertising {
+        font-size: 0;
+        background: url("../../images/presentation/pattern-02.jpg") repeat-y;
+        top: 426px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 82.212552%;
+        max-width: 1169px;
+        padding: 23px 23px 22px;
+        z-index: 1;
+
+
+        .left-part{
+            padding-right: 0;
+        .carousel1 {
+            @include breakpoint(large) {
+                height: 488px;
+
+                img{
+                    height: 488px;
+                }
+            }
+        }
+    }
+        .right-part {
+            padding-left: 0;
+            .share {
+                float: right;
+                figure {
+                    font-size: 0;
+                    &:last-child {
+                        img{
+                            float: left;
+                        }
+                            figcaption {
+                                background: #567721;
+                            }
+                    }
+                    img {
+                        width: 51%;
+                        @include breakpoint(large){
+                            height: 244px;
+                        }
+                    }
+                    figcaption {
+                        background: #BC5F15;
+                        float: left;
+                        max-height: 244px;
+                        padding: 45px 0 33px;
+                        text-align: center;
+
+                        h2 {
+                            font-family: 'Maiden Orange', sans-serif;
+                            color: #ffedcb;
+                            width: 215px;
+                            text-transform: uppercase;
+                            font-size: 37px;
+                            line-height: 42px;
+
+                            span {
+                                font-size: 60px;
+                                line-height: 50px;
+                                color: #ffe17a;
+
+                                &::after {
+                                    content: url("../../images/presentation/separator-03.png");
+                                }
+                            }
+                            .steak {
+                                &::after {
+                                    content: url("../../images/presentation/separator-04.png");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.parallax {
+    position: relative;
+    overflow: hidden;
+
+    .parallax_image, .parallax_pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background-position: center center;
+        will-change: transform;
+    }
+    .parallax_image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.44;
+    }
+    .parallax_pattern {
+        background-repeat: repeat;
+    }
+    .parallax_cnt {
+        position: relative;
+    }
+    .overflow {
+        overflow: visible;
+        @include breakpoint(middle) {
+            overflow: hidden;
+        }
+    }
+}

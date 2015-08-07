@@ -1,0 +1,21 @@
+.button{
+    display: inline-block;
+    margin-top: 24px;
+    padding: 13px 20px 11px 21px;
+    font-family: 'Maiden Orange', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #231e13;
+    text-decoration: none;
+    line-height: 26px;
+    color: #fefefe;
+    @include border-radius(3px);
+    @include transition-property(all);
+    @include transition-duration(400ms);
+
+    &:hover{
+        text-decoration: none;
+        background-color: #a73f07;
+        color: #fefefe;
+    }
+}
