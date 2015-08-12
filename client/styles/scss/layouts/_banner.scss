@@ -12,6 +12,8 @@
             figure {
                 img {
                     opacity: 0.66;
+                    max-width: 100%;
+                    height: auto;
                 }
                 figcaption {
                     margin: 39px 0 0 40px;
@@ -33,6 +35,10 @@
         float: right;
         overflow: hidden;
 
+        img {
+            max-width: 100%;
+            height: auto;
+        }
         &::after {
             content: "";
             text-align: center;
@@ -51,6 +57,14 @@
             @include transition-timing-function(ease);
             @include border-radius(50%);
             @include box-sizing(border-box);
+            @include breakpoint(v-ex-small) {
+                top: 525px;
+                width: 58px;
+                height: 58px;
+                margin-top: -30px;
+                margin-left: -29px;
+                padding-top: 6px;
+            }
         }
 
         &:hover::after {
@@ -58,7 +72,11 @@
             content: "";
             left: 78%;
             margin-left: -38px;
-            transform: rotate(360deg);
+            @include rotate(360deg);
+            @include breakpoint(v-ex-small) {
+                margin-top: -29px;
+                line-height: 58px;
+            }
         }
     }
 }

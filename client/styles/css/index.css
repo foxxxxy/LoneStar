@@ -68,6 +68,236 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 2, ../scss/_test.scss */
+body .rd-mobilemenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999999;
+  text-align: left;
+  -moz-transition: 300ms, all, ease;
+  -o-transition: 300ms, all, ease;
+  -webkit-transition: 300ms, all, ease;
+  transition: 300ms, all, ease;
+}
+@media (max-width: 767px) {
+  /* line 2, ../scss/_test.scss */
+  body .rd-mobilemenu {
+    display: block;
+  }
+}
+/* line 15, ../scss/_test.scss */
+body .rd-mobilemenu.active {
+  right: 0;
+}
+/* line 19, ../scss/_test.scss */
+body .rd-mobilemenu_ul {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  padding: 20px 0;
+  color: #fff;
+  background: url("../../images/header/header-bg.jpg");
+  font-family: "Maiden Orange", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: auto;
+  text-transform: capitalize;
+  -moz-box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
+  -moz-transform: translateX(-240px);
+  -ms-transform: translateX(-240px);
+  -webkit-transform: translateX(-240px);
+  transform: translateX(-240px);
+  -moz-transition: ease 300ms;
+  -o-transition: ease 300ms;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
+  -moz-transition: cubic-bezier(0.55, 0, 0.1, 1) 300ms;
+  -o-transition: cubic-bezier(0.55, 0, 0.1, 1) 300ms;
+  -webkit-transition: cubic-bezier(0.55, 0, 0.1, 1) 300ms;
+  transition: cubic-bezier(0.55, 0, 0.1, 1) 300ms;
+}
+/* line 39, ../scss/_test.scss */
+body .rd-mobilemenu.active .rd-mobilemenu_ul {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+/* line 42, ../scss/_test.scss */
+body .rd-mobilemenu_ul a {
+  display: block;
+  padding: 9px 25px 11px;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 48, ../scss/_test.scss */
+body .rd-mobilemenu_ul a:hover {
+  background: none;
+  color: #ffedcb;
+}
+/* line 52, ../scss/_test.scss */
+body .rd-mobilemenu_ul ul a {
+  padding-left: 40px;
+  text-transform: lowercase;
+}
+/* line 56, ../scss/_test.scss */
+body .rd-mobilemenu_ul ul ul a {
+  padding-left: 60px;
+}
+/* line 59, ../scss/_test.scss */
+body .rd-mobilemenu_ul:after {
+  content: '';
+  display: block;
+  height: 20px;
+}
+/* line 65, ../scss/_test.scss */
+body .rd-mobilepanel {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: url("../../images/header/header-bg.jpg");
+  color: #FFF;
+  z-index: 99999991;
+  -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  /* line 65, ../scss/_test.scss */
+  body .rd-mobilepanel {
+    display: block;
+  }
+}
+/* line 81, ../scss/_test.scss */
+body .rd-mobilepanel_title {
+  position: fixed;
+  top: 4px;
+  left: 56px;
+  right: 56px;
+  color: #FFF;
+  font-family: "Maiden Orange", sans-serif;
+  font-size: 24px;
+  line-height: 48px;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+}
+@media (max-width: 320px) {
+  /* line 81, ../scss/_test.scss */
+  body .rd-mobilepanel_title {
+    font-size: 18px;
+  }
+}
+/* line 99, ../scss/_test.scss */
+body .rd-mobilepanel_toggle {
+  position: fixed;
+  background: none;
+  border: none;
+  display: inline-block;
+  padding: 0;
+  outline: none;
+  outline-offset: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  top: 4px;
+  left: 8px;
+  width: 48px;
+  height: 48px;
+}
+/* line 114, ../scss/_test.scss */
+body .rd-mobilepanel_toggle::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+/* line 118, ../scss/_test.scss */
+body .rd-mobilepanel_toggle span {
+  position: relative;
+  display: block;
+  margin: auto;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 124, ../scss/_test.scss */
+body .rd-mobilepanel_toggle span:after, body .rd-mobilepanel_toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -8px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 132, ../scss/_test.scss */
+body .rd-mobilepanel_toggle span:after {
+  top: 8px;
+}
+/* line 135, ../scss/_test.scss */
+body .rd-mobilepanel_toggle span:after, body .rd-mobilepanel_toggle span:before, body .rd-mobilepanel_toggle span {
+  width: 24px;
+  height: 4px;
+  background-color: #FFF;
+  backface-visibility: hidden;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 142, ../scss/_test.scss */
+body .rd-mobilepanel_toggle span:before, body .rd-mobilepanel_toggle span:after {
+  -moz-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -moz-transition-delay: 0.3s, 0s;
+  -o-transition-delay: 0.3s, 0s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition-delay: 0.3s, 0s;
+  -moz-transition-property: top, -moz-transform;
+  -o-transition-property: top, -o-transform;
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+}
+/* line 147, ../scss/_test.scss */
+body .rd-mobilepanel_toggle.active span {
+  transition: background .3s 0s ease;
+  background: transparent;
+}
+/* line 151, ../scss/_test.scss */
+body .rd-mobilepanel_toggle.active span:before, body .rd-mobilepanel_toggle.active span:after {
+  top: 0;
+  -moz-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+/* line 155, ../scss/_test.scss */
+body .rd-mobilepanel_toggle.active span:before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 158, ../scss/_test.scss */
+body .rd-mobilepanel_toggle.active span:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 /* line 1, ../scss/components/_button.scss */
 .button {
   display: inline-block;
@@ -301,14 +531,21 @@ footer {
 }
 /* line 4, ../scss/widgets/_footer.scss */
 footer .privacy {
-  display: inline-block;
+  float: left;
   font-family: "Maiden Orange", sans-serif;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: #e7e0d2;
 }
-/* line 12, ../scss/widgets/_footer.scss */
+@media (max-width: 767px) {
+  /* line 4, ../scss/widgets/_footer.scss */
+  footer .privacy {
+    float: none;
+    text-align: center;
+  }
+}
+/* line 16, ../scss/widgets/_footer.scss */
 footer .privacy a {
   margin-left: 21px;
   text-decoration: none;
@@ -322,20 +559,29 @@ footer .privacy a {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 19, ../scss/widgets/_footer.scss */
+/* line 23, ../scss/widgets/_footer.scss */
 footer .privacy a:hover {
   color: #a73f07;
 }
-/* line 24, ../scss/widgets/_footer.scss */
+/* line 28, ../scss/widgets/_footer.scss */
 footer ul {
   float: right;
+  font-size: 0;
 }
-/* line 26, ../scss/widgets/_footer.scss */
+@media (max-width: 767px) {
+  /* line 28, ../scss/widgets/_footer.scss */
+  footer ul {
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+/* line 36, ../scss/widgets/_footer.scss */
 footer ul li {
-  float: left;
+  display: inline-block;
   margin-left: 16px;
 }
-/* line 29, ../scss/widgets/_footer.scss */
+/* line 39, ../scss/widgets/_footer.scss */
 footer ul li a {
   font-size: 33px;
   line-height: 26px;
@@ -349,17 +595,17 @@ footer ul li a {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 36, ../scss/widgets/_footer.scss */
+/* line 46, ../scss/widgets/_footer.scss */
 footer ul li a:hover {
   color: #a73f07;
 }
-/* line 42, ../scss/widgets/_footer.scss */
+/* line 52, ../scss/widgets/_footer.scss */
 footer .map {
   position: relative;
   padding-top: 60px;
   line-height: 26px;
 }
-/* line 47, ../scss/widgets/_footer.scss */
+/* line 57, ../scss/widgets/_footer.scss */
 footer .map .information-wrapper {
   position: absolute;
   right: 80px;
@@ -371,36 +617,67 @@ footer .map .information-wrapper {
   text-align: center;
   color: #787765;
 }
-/* line 58, ../scss/widgets/_footer.scss */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 57, ../scss/widgets/_footer.scss */
+  footer .map .information-wrapper {
+    right: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 57, ../scss/widgets/_footer.scss */
+  footer .map .information-wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+/* line 79, ../scss/widgets/_footer.scss */
 footer .map .information-wrapper .address {
   float: left;
-  padding: 24px 43px 22px 30px;
+  padding: 24px 43px 21px 30px;
   border: 1px solid #c9bf96;
   border-right: 2px dashed #c9bf96;
   color: #5e4c38;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 67, ../scss/widgets/_footer.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 79, ../scss/widgets/_footer.scss */
+  footer .map .information-wrapper .address {
+    float: none;
+    border: 1px solid #c9bf96;
+  }
+}
+/* line 92, ../scss/widgets/_footer.scss */
 footer .map .information-wrapper .address:before {
   content: url("../../images/footer/element-3.png");
   display: block;
   margin-bottom: 17px;
 }
-/* line 73, ../scss/widgets/_footer.scss */
+/* line 98, ../scss/widgets/_footer.scss */
 footer .map .information-wrapper .contacts {
   float: right;
-  padding: 24px 40px 22px 40px;
+  padding: 24px 40px 21px 40px;
   border: 1px solid #c9bf96;
   border-left: none;
 }
-/* line 79, ../scss/widgets/_footer.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 98, ../scss/widgets/_footer.scss */
+  footer .map .information-wrapper .contacts {
+    float: none;
+    border: 1px solid #c9bf96;
+  }
+}
+/* line 108, ../scss/widgets/_footer.scss */
 footer .map .information-wrapper .contacts:before {
   content: url("../../images/footer/element-4.png");
   display: block;
   margin-bottom: 12px;
 }
-/* line 86, ../scss/widgets/_footer.scss */
+/* line 115, ../scss/widgets/_footer.scss */
 footer .map .information-wrapper .contacts span a {
   font-size: 24px;
   line-height: 36px;
@@ -408,7 +685,7 @@ footer .map .information-wrapper .contacts span a {
   color: #282828;
   text-decoration: none;
 }
-/* line 94, ../scss/widgets/_footer.scss */
+/* line 123, ../scss/widgets/_footer.scss */
 footer .map .information-wrapper .contacts a {
   font-size: 18px;
   line-height: 30px;
@@ -423,7 +700,7 @@ footer .map .information-wrapper .contacts a {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 102, ../scss/widgets/_footer.scss */
+/* line 131, ../scss/widgets/_footer.scss */
 footer .map .information-wrapper .contacts a:hover {
   color: #e1481e;
 }
@@ -440,7 +717,13 @@ footer .map .information-wrapper .contacts a:hover {
 .homepage .presentation {
   background: url("../../images/presentation/header.jpg");
 }
-/* line 3, ../scss/layouts/_presentation.scss */
+@media (max-width: 767px) {
+  /* line 1, ../scss/layouts/_presentation.scss */
+  .homepage .presentation {
+    padding-top: 56px;
+  }
+}
+/* line 6, ../scss/layouts/_presentation.scss */
 .homepage .presentation .brand {
   margin-top: 68px;
   background: url("../../images/presentation/logo.png") no-repeat top center;
@@ -449,13 +732,13 @@ footer .map .information-wrapper .contacts a:hover {
   text-align: center;
 }
 @media (max-width: 767px) {
-  /* line 3, ../scss/layouts/_presentation.scss */
+  /* line 6, ../scss/layouts/_presentation.scss */
   .homepage .presentation .brand {
     margin-top: 0;
   }
 }
 @media (max-width: 320px) {
-  /* line 3, ../scss/layouts/_presentation.scss */
+  /* line 6, ../scss/layouts/_presentation.scss */
   .homepage .presentation .brand {
     background: none;
     margin: 0 auto;
@@ -464,7 +747,7 @@ footer .map .information-wrapper .contacts a:hover {
     text-align: center;
   }
 }
-/* line 19, ../scss/layouts/_presentation.scss */
+/* line 22, ../scss/layouts/_presentation.scss */
 .homepage .presentation .brand h1 {
   font-family: 'Ewert', sans-serif;
   font-size: 40px;
@@ -472,17 +755,17 @@ footer .map .information-wrapper .contacts a:hover {
   overflow: hidden;
   vertical-align: top;
 }
-/* line 25, ../scss/layouts/_presentation.scss */
+/* line 28, ../scss/layouts/_presentation.scss */
 .homepage .presentation .brand h1 a {
   text-decoration: none;
   color: #fff;
 }
-/* line 30, ../scss/layouts/_presentation.scss */
+/* line 33, ../scss/layouts/_presentation.scss */
 .homepage .presentation .brand h1 a span::before {
   content: url("../../images/presentation/separator-02.png");
   padding: 0 15px;
 }
-/* line 37, ../scss/layouts/_presentation.scss */
+/* line 40, ../scss/layouts/_presentation.scss */
 .homepage .presentation .brand span {
   font-family: 'Cabin', sans-serif;
   font-weight: 700;
@@ -490,14 +773,20 @@ footer .map .information-wrapper .contacts a:hover {
   color: #fff;
   line-height: 26px;
 }
-/* line 44, ../scss/layouts/_presentation.scss */
+/* line 48, ../scss/layouts/_presentation.scss */
 .homepage .presentation .brand p {
   margin-top: 44px;
   font-size: 26px;
   font-family: 'Yellowtail', sans-serif;
   color: #fff;
 }
-/* line 51, ../scss/layouts/_presentation.scss */
+@media (max-width: 320px) {
+  /* line 48, ../scss/layouts/_presentation.scss */
+  .homepage .presentation .brand p {
+    margin-top: 4px;
+  }
+}
+/* line 58, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising {
   font-size: 0;
   background: url("../../images/presentation/pattern-02.jpg") repeat-y;
@@ -511,65 +800,72 @@ footer .map .information-wrapper .contacts a:hover {
   z-index: 1;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 51, ../scss/layouts/_presentation.scss */
+  /* line 58, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising {
     position: relative;
     width: 67%;
     top: 0;
   }
 }
-/* line 68, ../scss/layouts/_presentation.scss */
+@media (max-width: 767px) {
+  /* line 58, ../scss/layouts/_presentation.scss */
+  .homepage .presentation .advertising {
+    width: 86%;
+    padding: 15px;
+  }
+}
+/* line 79, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .left-part {
   padding-right: 0;
 }
 @media (min-width: 1200px) {
-  /* line 70, ../scss/layouts/_presentation.scss */
+  /* line 81, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .left-part .carousel1 {
     height: 488px;
   }
-  /* line 74, ../scss/layouts/_presentation.scss */
+  /* line 85, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .left-part .carousel1 img {
     height: 488px;
   }
 }
-/* line 80, ../scss/layouts/_presentation.scss */
+/* line 91, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part {
   padding-left: 0;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 80, ../scss/layouts/_presentation.scss */
+  /* line 91, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part {
     width: 100%;
     float: none;
   }
 }
-/* line 86, ../scss/layouts/_presentation.scss */
+/* line 97, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share {
   float: right;
 }
-/* line 88, ../scss/layouts/_presentation.scss */
+/* line 99, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure {
   font-size: 0;
 }
-/* line 91, ../scss/layouts/_presentation.scss */
+/* line 102, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure:last-child img {
   float: left;
 }
-/* line 94, ../scss/layouts/_presentation.scss */
+/* line 105, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure:last-child figcaption {
   background: #567721;
 }
-/* line 98, ../scss/layouts/_presentation.scss */
+/* line 109, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure img {
   width: 51%;
 }
 @media (min-width: 1200px) {
-  /* line 98, ../scss/layouts/_presentation.scss */
+  /* line 109, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part .share figure img {
     height: 244px;
   }
 }
-/* line 104, ../scss/layouts/_presentation.scss */
+/* line 115, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption {
   background: #BC5F15;
   float: left;
@@ -577,7 +873,7 @@ footer .map .information-wrapper .contacts a:hover {
   padding: 45px 0 33px;
   text-align: center;
 }
-/* line 111, ../scss/layouts/_presentation.scss */
+/* line 122, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 {
   font-family: 'Maiden Orange', sans-serif;
   color: #ffedcb;
@@ -586,26 +882,26 @@ footer .map .information-wrapper .contacts a:hover {
   font-size: 37px;
   line-height: 42px;
 }
-/* line 119, ../scss/layouts/_presentation.scss */
+/* line 130, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 span {
   font-size: 60px;
   line-height: 50px;
   color: #ffe17a;
 }
-/* line 124, ../scss/layouts/_presentation.scss */
+/* line 135, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 span::after {
   content: url("../../images/presentation/separator-03.png");
 }
-/* line 129, ../scss/layouts/_presentation.scss */
+/* line 140, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 .steak::after {
   content: url("../../images/presentation/separator-04.png");
 }
-/* line 141, ../scss/layouts/_presentation.scss */
+/* line 152, ../scss/layouts/_presentation.scss */
 .homepage .parallax {
   position: relative;
   overflow: hidden;
 }
-/* line 145, ../scss/layouts/_presentation.scss */
+/* line 156, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_image, .homepage .parallax .parallax_pattern {
   position: absolute;
   top: 0;
@@ -615,26 +911,26 @@ footer .map .information-wrapper .contacts a:hover {
   background-position: center center;
   will-change: transform;
 }
-/* line 154, ../scss/layouts/_presentation.scss */
+/* line 165, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_image {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.44;
 }
-/* line 159, ../scss/layouts/_presentation.scss */
+/* line 170, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_pattern {
   background-repeat: repeat;
 }
-/* line 162, ../scss/layouts/_presentation.scss */
+/* line 173, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_cnt {
   position: relative;
 }
-/* line 165, ../scss/layouts/_presentation.scss */
+/* line 176, ../scss/layouts/_presentation.scss */
 .homepage .parallax .overflow {
   overflow: visible;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 165, ../scss/layouts/_presentation.scss */
+  /* line 176, ../scss/layouts/_presentation.scss */
   .homepage .parallax .overflow {
     overflow: hidden;
   }
@@ -643,7 +939,16 @@ footer .map .information-wrapper .contacts a:hover {
 .homepage .offers {
   padding: 120px 0 200px;
 }
-/* line 4, ../scss/layouts/_offers.scss */
+@media (max-width: 767px) {
+  /* line 3, ../scss/layouts/_offers.scss */
+  .homepage .offers .features {
+    padding-bottom: 30px;
+    width: 58%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+/* line 10, ../scss/layouts/_offers.scss */
 .homepage .offers .features h2 {
   font-family: 'Maiden Orange', sans-serif;
   font-size: 60px;
@@ -652,13 +957,38 @@ footer .map .information-wrapper .contacts a:hover {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 11, ../scss/layouts/_offers.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 10, ../scss/layouts/_offers.scss */
+  .homepage .offers .features h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 10, ../scss/layouts/_offers.scss */
+  .homepage .offers .features h2 {
+    font-size: 60px;
+    text-align: center;
+  }
+}
+/* line 24, ../scss/layouts/_offers.scss */
 .homepage .offers .features h2 span {
   font-size: 100px;
   line-height: 88px;
   color: #ffe17a;
 }
-/* line 17, ../scss/layouts/_offers.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 24, ../scss/layouts/_offers.scss */
+  .homepage .offers .features h2 span {
+    font-size: 90px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 24, ../scss/layouts/_offers.scss */
+  .homepage .offers .features h2 span {
+    font-size: 100px;
+  }
+}
+/* line 36, ../scss/layouts/_offers.scss */
 .homepage .offers .features h2::after {
   content: "-------------------";
   display: block;
@@ -667,21 +997,27 @@ footer .map .information-wrapper .contacts a:hover {
   color: #feddc0;
   opacity: 0.33;
 }
-/* line 26, ../scss/layouts/_offers.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 36, ../scss/layouts/_offers.scss */
+  .homepage .offers .features h2::after {
+    font-size: 24px;
+  }
+}
+/* line 48, ../scss/layouts/_offers.scss */
 .homepage .offers .features p {
   font-size: 24px;
   line-height: 28px;
   color: #D4CAB4;
 }
-/* line 31, ../scss/layouts/_offers.scss */
+/* line 53, ../scss/layouts/_offers.scss */
 .homepage .offers .features .organic {
   background: #6f6859;
 }
-/* line 34, ../scss/layouts/_offers.scss */
+/* line 56, ../scss/layouts/_offers.scss */
 .homepage .offers .features .organic:hover {
   background-color: #a73f07;
 }
-/* line 39, ../scss/layouts/_offers.scss */
+/* line 61, ../scss/layouts/_offers.scss */
 .homepage .offers h2 {
   font-family: 'Maiden Orange', sans-serif;
   font-size: 40px;
@@ -689,15 +1025,27 @@ footer .map .information-wrapper .contacts a:hover {
   text-transform: uppercase;
   color: #e7e0d2;
 }
-/* line 46, ../scss/layouts/_offers.scss */
+@media (max-width: 767px) {
+  /* line 61, ../scss/layouts/_offers.scss */
+  .homepage .offers h2 {
+    text-align: center;
+  }
+}
+/* line 71, ../scss/layouts/_offers.scss */
 .homepage .offers h2 span {
   color: #D5382C;
 }
-/* line 50, ../scss/layouts/_offers.scss */
+/* line 75, ../scss/layouts/_offers.scss */
 .homepage .offers figure {
   text-align: center;
 }
-/* line 53, ../scss/layouts/_offers.scss */
+@media (max-width: 767px) {
+  /* line 75, ../scss/layouts/_offers.scss */
+  .homepage .offers figure {
+    margin-bottom: 30px;
+  }
+}
+/* line 81, ../scss/layouts/_offers.scss */
 .homepage .offers figure figcaption h3 {
   margin-top: 28px;
   font-family: 'Maiden Orange', sans-serif;
@@ -706,17 +1054,23 @@ footer .map .information-wrapper .contacts a:hover {
   color: #fbf1cf;
   text-transform: uppercase;
 }
-/* line 61, ../scss/layouts/_offers.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 81, ../scss/layouts/_offers.scss */
+  .homepage .offers figure figcaption h3 {
+    font-size: 19px;
+  }
+}
+/* line 92, ../scss/layouts/_offers.scss */
 .homepage .offers figure figcaption h3::before {
   content: url("../../images/offers/element-1.png");
   padding: 0 5px;
 }
-/* line 65, ../scss/layouts/_offers.scss */
+/* line 96, ../scss/layouts/_offers.scss */
 .homepage .offers figure figcaption h3::after {
   content: url("../../images/offers/element-1.png");
   padding: 0 5px;
 }
-/* line 70, ../scss/layouts/_offers.scss */
+/* line 101, ../scss/layouts/_offers.scss */
 .homepage .offers figure figcaption p {
   margin-top: 20px;
   min-width: 260px;
@@ -724,7 +1078,7 @@ footer .map .information-wrapper .contacts a:hover {
   line-height: 22px;
   color: #eae3d5;
 }
-/* line 82, ../scss/layouts/_offers.scss */
+/* line 113, ../scss/layouts/_offers.scss */
 .homepage .parallax .parallax_image {
   opacity: 1;
 }
@@ -748,13 +1102,15 @@ footer .map .information-wrapper .contacts a:hover {
 /* line 13, ../scss/layouts/_banner.scss */
 .homepage .banner .left-part .best-place figure img {
   opacity: 0.66;
+  max-width: 100%;
+  height: auto;
 }
-/* line 16, ../scss/layouts/_banner.scss */
+/* line 18, ../scss/layouts/_banner.scss */
 .homepage .banner .left-part .best-place figure figcaption {
   margin: 39px 0 0 40px;
   float: right;
 }
-/* line 19, ../scss/layouts/_banner.scss */
+/* line 21, ../scss/layouts/_banner.scss */
 .homepage .banner .left-part .best-place figure figcaption h3 {
   max-width: 320px;
   font-family: "Maiden Orange", sans-serif;
@@ -763,13 +1119,18 @@ footer .map .information-wrapper .contacts a:hover {
   text-transform: uppercase;
   color: #D4CAB4;
 }
-/* line 31, ../scss/layouts/_banner.scss */
+/* line 33, ../scss/layouts/_banner.scss */
 .homepage .banner .thumb {
   display: block;
   float: right;
   overflow: hidden;
 }
-/* line 36, ../scss/layouts/_banner.scss */
+/* line 38, ../scss/layouts/_banner.scss */
+.homepage .banner .thumb img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 42, ../scss/layouts/_banner.scss */
 .homepage .banner .thumb::after {
   content: "";
   text-align: center;
@@ -802,26 +1163,78 @@ footer .map .information-wrapper .contacts a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 56, ../scss/layouts/_banner.scss */
+@media (max-width: 320px) {
+  /* line 42, ../scss/layouts/_banner.scss */
+  .homepage .banner .thumb::after {
+    top: 525px;
+    width: 58px;
+    height: 58px;
+    margin-top: -30px;
+    margin-left: -29px;
+    padding-top: 6px;
+  }
+}
+/* line 70, ../scss/layouts/_banner.scss */
 .homepage .banner .thumb:hover::after {
   padding: 0;
   content: "";
   left: 78%;
   margin-left: -38px;
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+@media (max-width: 320px) {
+  /* line 70, ../scss/layouts/_banner.scss */
+  .homepage .banner .thumb:hover::after {
+    margin-top: -29px;
+    line-height: 58px;
+  }
 }
 /* line 1, ../scss/layouts/_testimonials.scss */
 .homepage .testimonials {
   padding: 80px 0 52px;
   background: url("../../images/testimonials/content.jpg");
 }
-/* line 5, ../scss/layouts/_testimonials.scss */
+@media (max-width: 767px) {
+  /* line 1, ../scss/layouts/_testimonials.scss */
+  .homepage .testimonials {
+    text-align: center;
+  }
+}
+/* line 8, ../scss/layouts/_testimonials.scss */
 .homepage .testimonials .image-border {
   background: url("../../images/testimonials/border.jpg") no-repeat;
   background-size: contain;
   padding: 17px 17px 20px;
 }
-/* line 11, ../scss/layouts/_testimonials.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 8, ../scss/layouts/_testimonials.scss */
+  .homepage .testimonials .image-border {
+    padding: 13px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 8, ../scss/layouts/_testimonials.scss */
+  .homepage .testimonials .image-border {
+    display: inline-block;
+    padding: 20px;
+  }
+}
+@media (max-width: 320px) {
+  /* line 8, ../scss/layouts/_testimonials.scss */
+  .homepage .testimonials .image-border {
+    display: block;
+    padding: 15px;
+  }
+}
+/* line 24, ../scss/layouts/_testimonials.scss */
+.homepage .testimonials .image-border img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 30, ../scss/layouts/_testimonials.scss */
 .homepage .testimonials .name {
   margin-top: 20px;
   font-family: "Maiden Orange", sans-serif;
@@ -831,7 +1244,7 @@ footer .map .information-wrapper .contacts a:hover {
   color: #e7e0d2;
   text-align: center;
 }
-/* line 20, ../scss/layouts/_testimonials.scss */
+/* line 39, ../scss/layouts/_testimonials.scss */
 .homepage .testimonials h2 {
   margin-top: 14px;
   padding-left: 27px;
@@ -841,30 +1254,56 @@ footer .map .information-wrapper .contacts a:hover {
   color: #e7e0d2;
   text-transform: uppercase;
 }
-/* line 29, ../scss/layouts/_testimonials.scss */
+/* line 48, ../scss/layouts/_testimonials.scss */
 .homepage .testimonials h2::before {
   content: url("../../images/testimonials/separator-05.png");
   margin: 15px;
 }
-/* line 33, ../scss/layouts/_testimonials.scss */
+@media (max-width: 320px) {
+  /* line 48, ../scss/layouts/_testimonials.scss */
+  .homepage .testimonials h2::before {
+    display: none;
+  }
+}
+/* line 55, ../scss/layouts/_testimonials.scss */
 .homepage .testimonials h2::after {
   content: url("../../images/testimonials/separator-06.png");
   margin: 15px;
 }
-/* line 38, ../scss/layouts/_testimonials.scss */
+@media (max-width: 320px) {
+  /* line 55, ../scss/layouts/_testimonials.scss */
+  .homepage .testimonials h2::after {
+    display: none;
+  }
+}
+/* line 63, ../scss/layouts/_testimonials.scss */
 .homepage .testimonials p {
   padding: 22px 0 0 27px;
   color: #D4CAB4;
   font-size: 20px;
   line-height: 26px;
 }
-/* line 44, ../scss/layouts/_testimonials.scss */
+@media (max-width: 767px) {
+  /* line 63, ../scss/layouts/_testimonials.scss */
+  .homepage .testimonials p {
+    width: 57%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+/* line 74, ../scss/layouts/_testimonials.scss */
 .homepage .testimonials .button {
   float: right;
   background: #51463e;
   color: #e7e0d2;
 }
-/* line 49, ../scss/layouts/_testimonials.scss */
+@media (max-width: 767px) {
+  /* line 74, ../scss/layouts/_testimonials.scss */
+  .homepage .testimonials .button {
+    float: none;
+  }
+}
+/* line 82, ../scss/layouts/_testimonials.scss */
 .homepage .testimonials .button:hover {
   background-color: #a73f07;
 }

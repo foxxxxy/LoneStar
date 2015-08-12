@@ -1,14 +1,33 @@
 .testimonials {
     padding: 80px 0 52px;
     background: url("../../images/testimonials/content.jpg");
+    @include breakpoint(ex-small){
+        text-align: center;
+    }
 
     .image-border {
         background: url("../../images/testimonials/border.jpg") no-repeat;
         background-size: contain;
         padding: 17px 17px 20px;
+        @include breakpoint(small) {
+            padding: 13px;
+        }
+        @include breakpoint(ex-small) {
+            display: inline-block;
+            padding: 20px;
+        }
+        @include breakpoint(v-ex-small) {
+            display: block;
+            padding: 15px;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
     }
 
-    .name{
+    .name {
         margin-top: 20px;
         font-family: "Maiden Orange", sans-serif;
         font-size: 24px;
@@ -17,7 +36,7 @@
         color: #e7e0d2;
         text-align: center;
     }
-    h2{
+    h2 {
         margin-top: 14px;
         padding-left: 27px;
         font-family: "Maiden Orange", sans-serif;
@@ -26,27 +45,41 @@
         color: #e7e0d2;
         text-transform: uppercase;
 
-        &::before{
+        &::before {
             content: url("../../images/testimonials/separator-05.png");
             margin: 15px;
+            @include breakpoint(v-ex-small){
+                display: none;
+            }
         }
-        &::after{
+        &::after {
             content: url("../../images/testimonials/separator-06.png");
             margin: 15px;
+            @include breakpoint(v-ex-small){
+                display: none;
+            }
         }
     }
-    p{
+    p {
         padding: 22px 0 0 27px;
         color: #D4CAB4;
         font-size: 20px;
         line-height: 26px;
+        @include breakpoint(ex-small){
+            width: 57%;
+            margin: 0 auto;
+            padding-left: 0;
+        }
     }
-    .button{
+    .button {
         float: right;
         background: #51463e;
         color: #e7e0d2;
+        @include breakpoint(ex-small){
+            float: none;
+        }
 
-        &:hover{
+        &:hover {
             background-color: #a73f07;
         }
     }

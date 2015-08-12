@@ -1,6 +1,12 @@
 .offers {
     padding: 120px 0 200px;
     .features {
+        @include breakpoint(ex-small) {
+            padding-bottom: 30px;
+            width: 58%;
+            margin: 0 auto;
+            text-align: center;
+        }
         h2 {
             font-family: 'Maiden Orange', sans-serif;
             font-size: 60px;
@@ -8,10 +14,23 @@
             color: #fff;
             text-align: left;
             text-transform: uppercase;
+            @include breakpoint(small){
+                font-size: 40px;
+            }
+            @include breakpoint(ex-small) {
+                font-size: 60px;
+                text-align: center;
+            }
             span {
                 font-size: 100px;
                 line-height: 88px;
                 color: #ffe17a;
+                @include breakpoint(small){
+                    font-size: 90px;
+                }
+                @include breakpoint(ex-small) {
+                    font-size: 100px;
+                }
             }
 
             &::after {
@@ -21,6 +40,9 @@
                 font-size: 36px;
                 color: #feddc0;
                 opacity: 0.33;
+                @include breakpoint(small){
+                    font-size: 24px;
+                }
             }
         }
         p {
@@ -42,6 +64,9 @@
         line-height: 42px;
         text-transform: uppercase;
         color: #e7e0d2;
+        @include breakpoint(ex-small) {
+            text-align: center;
+        }
 
         span {
             color: #D5382C;
@@ -49,6 +74,9 @@
     }
     figure {
         text-align: center;
+        @include breakpoint(ex-small) {
+            margin-bottom: 30px;
+        }
         figcaption {
             h3 {
                 margin-top: 28px;
@@ -57,6 +85,9 @@
                 line-height: 30px;
                 color: #fbf1cf;
                 text-transform: uppercase;
+                @include breakpoint(small) {
+                    font-size: 19px;
+                }
 
                 &::before {
                     content: url("../../images/offers/element-1.png");
@@ -67,7 +98,7 @@
                     padding: 0 5px;
                 }
             }
-            p{
+            p {
                 margin-top: 20px;
                 min-width: 260px;
                 font-size: 18px;

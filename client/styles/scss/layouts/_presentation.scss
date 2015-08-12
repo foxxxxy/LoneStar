@@ -1,5 +1,8 @@
 .presentation {
     background: url("../../images/presentation/header.jpg");
+    @include breakpoint(ex-small) {
+        padding-top: 56px;
+    }
     .brand {
         margin-top: 68px;
         background: url("../../images/presentation/logo.png") no-repeat top center;
@@ -40,12 +43,16 @@
             font-size: 14px;
             color: #fff;
             line-height: 26px;
+
         }
         p {
             margin-top: 44px;
             font-size: 26px;
             font-family: 'Yellowtail', sans-serif;
             color: #fff;
+            @include breakpoint(v-ex-small){
+                margin-top: 4px;
+            }
         }
     }
     .advertising {
@@ -63,6 +70,10 @@
             position: relative;
             width: 67%;
             top: 0;
+        }
+        @include breakpoint(ex-small){
+            width: 86%;
+            padding: 15px;
         }
 
         .left-part {

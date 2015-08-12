@@ -2,12 +2,16 @@ footer {
     background: url("../../images/testimonials/content.jpg");
 
     .privacy {
-        display: inline-block;
+        float: left;
         font-family: "Maiden Orange", sans-serif;
         font-size: 18px;
         line-height: 26px;
         text-transform: uppercase;
         color: #e7e0d2;
+        @include breakpoint(ex-small) {
+            float: none;
+            text-align: center;
+        }
 
         a {
             margin-left: 21px;
@@ -23,8 +27,14 @@ footer {
     }
     ul {
         float: right;
+        font-size: 0;
+        @include breakpoint(ex-small) {
+            float: none;
+            margin-top: 20px;
+            text-align: center;
+        }
         li {
-            float: left;
+            display: inline-block;
             margin-left: 16px;
             a {
                 font-size: 33px;
@@ -54,15 +64,30 @@ footer {
             line-height: 28px;
             text-align: center;
             color: #787765;
+            @include breakpoint(middle){
+                right: 80px;
+            }
+            @include breakpoint(small) {
+                position: relative;
+                top: 0;
+                right: 0;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
 
             .address {
                 float: left;
-                padding: 24px 43px 22px 30px;
+                padding: 24px 43px 21px 30px;
                 border: 1px solid #c9bf96;
                 border-right: 2px dashed #c9bf96;
                 color: #5e4c38;
                 font-size: 20px;
                 line-height: 30px;
+                @include breakpoint(small) {
+                    float: none;
+                    border: 1px solid #c9bf96;
+                }
 
                 &:before {
                     content: url("../../images/footer/element-3.png");
@@ -72,9 +97,13 @@ footer {
             }
             .contacts {
                 float: right;
-                padding: 24px 40px 22px 40px;
+                padding: 24px 40px 21px 40px;
                 border: 1px solid #c9bf96;
                 border-left: none;
+                @include breakpoint(small) {
+                    float: none;
+                    border: 1px solid #c9bf96;
+                }
 
                 &:before {
                     content: url("../../images/footer/element-4.png");
