@@ -910,7 +910,7 @@ footer .map .information-wrapper .contacts a:hover {
     margin: 0 15px;
   }
 }
-/* line 130, ../scss/layouts/_presentation.scss */
+/* line 133, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption {
   background: #BC5F15;
   float: left;
@@ -919,13 +919,14 @@ footer .map .information-wrapper .contacts a:hover {
   text-align: center;
 }
 @media (max-width: 320px) {
-  /* line 130, ../scss/layouts/_presentation.scss */
+  /* line 133, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part .share figure figcaption {
+    width: 94%;
     margin-left: 15px;
     padding: 45px 15px 33px;
   }
 }
-/* line 141, ../scss/layouts/_presentation.scss */
+/* line 145, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 {
   font-family: 'Maiden Orange', sans-serif;
   color: #ffedcb;
@@ -934,26 +935,26 @@ footer .map .information-wrapper .contacts a:hover {
   font-size: 37px;
   line-height: 42px;
 }
-/* line 149, ../scss/layouts/_presentation.scss */
+/* line 153, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 span {
   font-size: 60px;
   line-height: 50px;
   color: #ffe17a;
 }
-/* line 154, ../scss/layouts/_presentation.scss */
+/* line 158, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 span::after {
   content: url("../../images/presentation/separator-03.png");
 }
-/* line 159, ../scss/layouts/_presentation.scss */
+/* line 163, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 .steak::after {
   content: url("../../images/presentation/separator-04.png");
 }
-/* line 171, ../scss/layouts/_presentation.scss */
+/* line 175, ../scss/layouts/_presentation.scss */
 .homepage .parallax {
   position: relative;
   overflow: hidden;
 }
-/* line 175, ../scss/layouts/_presentation.scss */
+/* line 179, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_image, .homepage .parallax .parallax_pattern {
   position: absolute;
   top: 0;
@@ -963,26 +964,26 @@ footer .map .information-wrapper .contacts a:hover {
   background-position: center center;
   will-change: transform;
 }
-/* line 184, ../scss/layouts/_presentation.scss */
+/* line 188, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_image {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.44;
 }
-/* line 189, ../scss/layouts/_presentation.scss */
+/* line 193, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_pattern {
   background-repeat: repeat;
 }
-/* line 192, ../scss/layouts/_presentation.scss */
+/* line 196, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_cnt {
   position: relative;
 }
-/* line 195, ../scss/layouts/_presentation.scss */
+/* line 199, ../scss/layouts/_presentation.scss */
 .homepage .parallax .overflow {
   overflow: visible;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 195, ../scss/layouts/_presentation.scss */
+  /* line 199, ../scss/layouts/_presentation.scss */
   .homepage .parallax .overflow {
     overflow: hidden;
   }

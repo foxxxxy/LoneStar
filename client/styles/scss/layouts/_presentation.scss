@@ -122,6 +122,9 @@
                         @include breakpoint(large) {
                             height: 244px;
                         }
+                        @include breakpoint(ex-small){
+                        //!!!!!!!!!!!!!!!
+                        }
                         @include breakpoint(v-ex-small){
                             width: 94%;
                             margin: 0 15px;
@@ -134,6 +137,7 @@
                         padding: 45px 0 33px;
                         text-align: center;
                         @include breakpoint(v-ex-small){
+                            width: 94%;
                             margin-left: 15px;
                             padding: 45px 15px 33px;
                         }
