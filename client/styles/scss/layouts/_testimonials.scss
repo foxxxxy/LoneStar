@@ -4,6 +4,9 @@
     @include breakpoint(ex-small){
         text-align: center;
     }
+    @include breakpoint(v-ex-small){
+        padding: 40px 0 52px;
+    }
 
     .image-border {
         background: url("../../images/testimonials/border.jpg") no-repeat;
@@ -35,6 +38,9 @@
         text-transform: uppercase;
         color: #e7e0d2;
         text-align: center;
+        @include breakpoint(v-ex-small){
+            margin-top: 0;
+        }
     }
     h2 {
         margin-top: 14px;
@@ -44,8 +50,11 @@
         line-height: 42px;
         color: #e7e0d2;
         text-transform: uppercase;
+        @include breakpoint(v-ex-small) {
+            margin-top: 30px;
+        }
 
-        &::before {
+            &::before {
             content: url("../../images/testimonials/separator-05.png");
             margin: 15px;
             @include breakpoint(v-ex-small){
@@ -70,7 +79,11 @@
             margin: 0 auto;
             padding-left: 0;
         }
-    }
+        @include breakpoint(v-ex-small) {
+            width: 98%;
+        }
+
+        }
     .button {
         float: right;
         background: #51463e;

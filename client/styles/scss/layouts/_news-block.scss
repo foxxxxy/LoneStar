@@ -13,8 +13,14 @@
     .post-wrapper {
         margin-top: 42px;
         color: #fff;
+        @include breakpoint(v-ex-small) {
+            margin-top: 0;
+        }
 
         .news {
+            @include breakpoint(v-ex-small) {
+                margin-top: 42px;
+            }
             time {
                 float: left;
                 font-family: "Maiden Orange", sans-serif;
@@ -59,7 +65,9 @@
         color: #5a5045;
         @include transition-property(all);
         @include transition-duration(400ms);
-
+        @include breakpoint(v-ex-small) {
+            left: 27%;
+        }
         &:hover {
             background-color: #a73f07;
             color: #fff;

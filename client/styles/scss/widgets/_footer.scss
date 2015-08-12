@@ -75,6 +75,14 @@ footer {
                 margin: 0 auto;
                 text-align: center;
             }
+            @include breakpoint(v-ex-small) {
+                position: relative;
+                top: 0;
+                right: 0;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
 
             .address {
                 float: left;
@@ -85,6 +93,10 @@ footer {
                 font-size: 20px;
                 line-height: 30px;
                 @include breakpoint(small) {
+                    float: none;
+                    border: 1px solid #c9bf96;
+                }
+                @include breakpoint(v-ex-small) {
                     float: none;
                     border: 1px solid #c9bf96;
                 }
@@ -101,6 +113,10 @@ footer {
                 border: 1px solid #c9bf96;
                 border-left: none;
                 @include breakpoint(small) {
+                    float: none;
+                    border: 1px solid #c9bf96;
+                }
+                @include breakpoint(v-ex-small) {
                     float: none;
                     border: 1px solid #c9bf96;
                 }
