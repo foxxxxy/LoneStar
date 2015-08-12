@@ -7,6 +7,9 @@
             margin: 0 auto;
             text-align: center;
         }
+        @include breakpoint(v-ex-small){
+            width: 100%;
+        }
         h2 {
             font-family: 'Maiden Orange', sans-serif;
             font-size: 60px;
@@ -40,6 +43,7 @@
                 font-size: 36px;
                 color: #feddc0;
                 opacity: 0.33;
+                line-height: 26px;
                 @include breakpoint(small){
                     font-size: 24px;
                 }

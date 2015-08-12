@@ -16,7 +16,7 @@
             background: none;
             margin: 0 auto;
             padding: 0 0 30px 0;
-            min-width: 290px;
+            min-width: 275px;
             text-align: center;
         }
         h1 {
@@ -50,7 +50,7 @@
             font-size: 26px;
             font-family: 'Yellowtail', sans-serif;
             color: #fff;
-            @include breakpoint(v-ex-small){
+            @include breakpoint(v-ex-small) {
                 margin-top: 4px;
             }
         }
@@ -71,9 +71,12 @@
             width: 67%;
             top: 0;
         }
-        @include breakpoint(ex-small){
+        @include breakpoint(ex-small) {
             width: 86%;
             padding: 15px;
+        }
+        @include breakpoint(v-ex-small) {
+            width: 100%;
         }
 
         .left-part {
@@ -84,6 +87,14 @@
 
                     img {
                         height: 488px;
+                    }
+                }
+                .owl-item {
+                    img {
+                        @include breakpoint(v-ex-small) {
+                            max-width: 95%;
+                            height: auto;
+                        }
                     }
                 }
             }
@@ -111,6 +122,10 @@
                         @include breakpoint(large) {
                             height: 244px;
                         }
+                        @include breakpoint(v-ex-small){
+                            width: 94%;
+                            margin: 0 15px;
+                        }
                     }
                     figcaption {
                         background: #BC5F15;
@@ -118,6 +133,10 @@
                         max-height: 244px;
                         padding: 45px 0 33px;
                         text-align: center;
+                        @include breakpoint(v-ex-small){
+                            margin-left: 15px;
+                            padding: 45px 15px 33px;
+                        }
 
                         h2 {
                             font-family: 'Maiden Orange', sans-serif;
