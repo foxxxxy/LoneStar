@@ -22,17 +22,17 @@
     .resp-tabs {
         font-size: 0;
         text-align: center;
-        @include breakpoint(ex-small){
+        @include breakpoint(ex-small) {
             width: 60% !important;
             margin: 0 auto !important;
         }
-        @include breakpoint(v-ex-small){
+        @include breakpoint(v-ex-small) {
             width: 100% !important;
         }
         .resp-tabs-list {
             display: inline-block;
             margin-top: 44px;
-            @include breakpoint(ex-small){
+            @include breakpoint(ex-small) {
                 display: none;
             }
 
@@ -51,8 +51,9 @@
                 @include border-radius(3px);
                 @include transition-property(all);
                 @include transition-duration(300ms);
-                @include breakpoint(small){
-                    padding: 0 20px;
+                @include breakpoint(small) {
+                    padding-right: 20px;
+                    padding-left: 20px;
                 }
 
                 &:first-child {
@@ -104,7 +105,7 @@
             @include border-radius(3px);
             @include transition-property(all);
             @include transition-duration(300ms);
-            @include breakpoint(ex-small){
+            @include breakpoint(ex-small) {
                 display: block;
             }
 
@@ -134,7 +135,7 @@
             right: 0;
         }
 
-        .resp-tab-content-active{
+        .resp-tab-content-active {
             position: relative;
             opacity: 1;
             z-index: 11;
@@ -159,7 +160,10 @@
                 margin-left: 10px;
                 width: 100%;
             }
-            img{
+            img {
+                @include breakpoint(small) {
+                    width: 100%;
+                }
                 @include breakpoint(ex-small) {
                     width: 100%;
                 }

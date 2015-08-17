@@ -71,6 +71,9 @@
             width: 67%;
             top: 0;
         }
+        @include breakpoint(small) {
+            width: 87%;
+        }
         @include breakpoint(ex-small) {
             width: 70%;
             padding: 15px;
@@ -89,14 +92,18 @@
                         height: 488px;
                     }
                 }
-                @include breakpoint(ex-small){
+                @include breakpoint(small) {
+                    width: 97%;
+                    height: auto;
+                }
+                @include breakpoint(ex-small) {
                     width: 97%;
                     height: auto;
                 }
                 .owl-item {
                     img {
                         @include breakpoint(v-ex-small) {
-                            max-width: 95%;
+                            max-width: 97%;
                             height: auto;
                         }
                     }
@@ -109,11 +116,15 @@
                 width: 100%;
                 float: none;
             }
-            @include breakpoint(ex-small){
+            @include breakpoint(ex-small) {
                 padding-left: 15px;
             }
             .share {
                 float: right;
+                @include breakpoint(small) {
+                    float: none;
+                    padding: 0 2px 0 15px;
+                }
                 figure {
                     font-size: 0;
                     &:last-child {
@@ -131,7 +142,7 @@
                             height: 244px;
                         }
 
-                        @include breakpoint(v-ex-small){
+                        @include breakpoint(v-ex-small) {
                             width: 94%;
                             margin: 0 15px;
                         }
@@ -143,7 +154,7 @@
                         max-height: 244px;
                         padding: 45px 0 33px;
                         text-align: center;
-                        @include breakpoint(v-ex-small){
+                        @include breakpoint(v-ex-small) {
                             width: 94%;
                             margin-left: 15px;
                             padding: 45px 15px 33px;
@@ -156,6 +167,12 @@
                             text-transform: uppercase;
                             font-size: 37px;
                             line-height: 42px;
+                            @include breakpoint(small) {
+                                margin: 0 auto;
+                            }
+                            @include breakpoint(ex-small) {
+                                margin: 0 auto;
+                            }
 
                             span {
                                 font-size: 60px;

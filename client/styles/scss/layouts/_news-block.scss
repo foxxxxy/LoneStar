@@ -9,14 +9,14 @@
         text-transform: uppercase;
         text-align: center;
         color: #e7e0d2;
-        @include breakpoint(ex-small){
+        @include breakpoint(ex-small) {
             padding-bottom: 42px;
         }
     }
     .post-wrapper {
         margin-top: 42px;
         color: #fff;
-        @include breakpoint(ex-small){
+        @include breakpoint(ex-small) {
             width: 70%;
             margin: 0 auto;
         }
@@ -61,14 +61,16 @@
                 line-height: 22px;
             }
         }
-        .last{
-            margin-bottom: 84px;
+        .last {
+            @include breakpoint(ex-small) {
+                margin-bottom: 84px;
+            }
         }
     }
     .btt {
         position: relative;
         margin: 84px 0 0;
-        @include breakpoint(ex-small){
+        @include breakpoint(ex-small) {
             margin: 0 auto;
         }
     }

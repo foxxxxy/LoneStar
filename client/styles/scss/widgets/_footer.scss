@@ -64,16 +64,8 @@ footer {
             line-height: 28px;
             text-align: center;
             color: #787765;
-            @include breakpoint(middle){
+            @include breakpoint(middle) {
                 right: 80px;
-            }
-            @include breakpoint(small) {
-                position: relative;
-                top: 0;
-                right: 0;
-                display: block;
-                margin: 0 auto;
-                text-align: center;
             }
             @include breakpoint(ex-small) {
                 position: relative;
@@ -92,10 +84,6 @@ footer {
                 color: #5e4c38;
                 font-size: 20px;
                 line-height: 30px;
-                @include breakpoint(small) {
-                    float: none;
-                    border: 1px solid #c9bf96;
-                }
                 @include breakpoint(ex-small) {
                     float: none;
                     border: 1px solid #c9bf96;
@@ -112,10 +100,6 @@ footer {
                 padding: 24px 40px 21px 40px;
                 border: 1px solid #c9bf96;
                 border-left: none;
-                @include breakpoint(small) {
-                    float: none;
-                    border: 1px solid #c9bf96;
-                }
                 @include breakpoint(ex-small) {
                     float: none;
                     border: 1px solid #c9bf96;

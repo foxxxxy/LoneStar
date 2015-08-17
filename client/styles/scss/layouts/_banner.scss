@@ -1,11 +1,15 @@
 .banner {
     background: url("../../images/testimonials/content.jpg");
-    .wow{
-      @include breakpoint(ex-small){
-          width: 66%;
-          margin: 0 auto;
-      }
-        @include breakpoint(v-ex-small){
+    .wow {
+        @include breakpoint(small) {
+            width: 66%;
+            margin: 0 auto;
+        }
+        @include breakpoint(ex-small) {
+            width: 64%;
+            margin: 0 auto;
+        }
+        @include breakpoint(v-ex-small) {
             width: 100%;
         }
     }
@@ -15,13 +19,21 @@
         padding: 15px 15px 14px;
         float: left;
         background: #231e13;
-        @include breakpoint(ex-small){
+        @include breakpoint(small) {
+            float: none;
+            padding: 15px 13px 14px;
+        }
+        @include breakpoint(ex-small) {
             float: none;
         }
         .best-place {
             padding: 13px 53px 12px 25px;
             border: 1px solid #6f6859;
-            @include breakpoint(ex-small){
+            @include breakpoint(small) {
+                padding-right: 23px;
+                text-align: center;
+            }
+            @include breakpoint(ex-small) {
                 padding-right: 23px;
                 text-align: center;
             }
@@ -34,7 +46,10 @@
                 figcaption {
                     margin: 39px 0 0 40px;
                     float: right;
-                    @include breakpoint(ex-small){
+                    @include breakpoint(small) {
+                        float: none;
+                    }
+                    @include breakpoint(ex-small) {
                         float: none;
                         margin: 19px 0 0;
                     }
@@ -45,7 +60,7 @@
                         line-height: 36px;
                         text-transform: uppercase;
                         color: #D4CAB4;
-                        @include breakpoint(ex-small){
+                        @include breakpoint(ex-small) {
                             margin: 0 auto;
                         }
                     }
@@ -82,6 +97,16 @@
             @include transition-timing-function(ease);
             @include border-radius(50%);
             @include box-sizing(border-box);
+            @include breakpoint(small) {
+                content: "";
+                left: 50%;
+                top: -10px;
+                width: 58px;
+                height: 58px;
+                margin-top: -30px;
+                margin-left: -29px;
+                padding: 6px 0 0;
+            }
             @include breakpoint(ex-small) {
                 content: "";
                 left: 50%;
@@ -100,6 +125,10 @@
             left: 78%;
             margin-left: -37%;
             @include rotate(360deg);
+            @include breakpoint(small) {
+                top: 50%;
+                @include rotate(360deg);
+            }
             @include breakpoint(ex-small) {
                 top: 50%;
                 @include rotate(360deg);
