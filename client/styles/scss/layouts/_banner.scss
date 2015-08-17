@@ -1,18 +1,27 @@
 .banner {
     background: url("../../images/testimonials/content.jpg");
+    .wow{
+      @include breakpoint(ex-small){
+          width: 66%;
+          margin: 0 auto;
+      }
+        @include breakpoint(v-ex-small){
+            width: 100%;
+        }
+    }
     .left-part {
         position: relative;
         z-index: 10;
         padding: 15px 15px 14px;
         float: left;
         background: #231e13;
-        @include breakpoint(v-ex-small){
+        @include breakpoint(ex-small){
             float: none;
         }
         .best-place {
             padding: 13px 53px 12px 25px;
             border: 1px solid #6f6859;
-            @include breakpoint(v-ex-small){
+            @include breakpoint(ex-small){
                 padding-right: 23px;
                 text-align: center;
             }
@@ -25,7 +34,7 @@
                 figcaption {
                     margin: 39px 0 0 40px;
                     float: right;
-                    @include breakpoint(v-ex-small){
+                    @include breakpoint(ex-small){
                         float: none;
                         margin: 19px 0 0;
                     }
@@ -36,6 +45,9 @@
                         line-height: 36px;
                         text-transform: uppercase;
                         color: #D4CAB4;
+                        @include breakpoint(ex-small){
+                            margin: 0 auto;
+                        }
                     }
                 }
             }
@@ -59,7 +71,7 @@
             font: 400 24px/78px 'FontAwesome';
             width: 76px;
             height: 76px;
-            left: 54%;
+            left: -40px;
             top: 120px;
             margin-top: -38px;
             padding-left: 27px;
@@ -70,7 +82,7 @@
             @include transition-timing-function(ease);
             @include border-radius(50%);
             @include box-sizing(border-box);
-            @include breakpoint(v-ex-small) {
+            @include breakpoint(ex-small) {
                 content: "";
                 left: 50%;
                 top: -10px;
@@ -88,7 +100,7 @@
             left: 78%;
             margin-left: -37%;
             @include rotate(360deg);
-            @include breakpoint(v-ex-small) {
+            @include breakpoint(ex-small) {
                 top: 50%;
                 @include rotate(360deg);
             }

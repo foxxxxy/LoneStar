@@ -75,7 +75,7 @@ footer {
                 margin: 0 auto;
                 text-align: center;
             }
-            @include breakpoint(v-ex-small) {
+            @include breakpoint(ex-small) {
                 position: relative;
                 top: 0;
                 right: 0;
@@ -96,7 +96,7 @@ footer {
                     float: none;
                     border: 1px solid #c9bf96;
                 }
-                @include breakpoint(v-ex-small) {
+                @include breakpoint(ex-small) {
                     float: none;
                     border: 1px solid #c9bf96;
                 }
@@ -116,7 +116,7 @@ footer {
                     float: none;
                     border: 1px solid #c9bf96;
                 }
-                @include breakpoint(v-ex-small) {
+                @include breakpoint(ex-small) {
                     float: none;
                     border: 1px solid #c9bf96;
                 }

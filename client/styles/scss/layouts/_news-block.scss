@@ -9,18 +9,27 @@
         text-transform: uppercase;
         text-align: center;
         color: #e7e0d2;
+        @include breakpoint(ex-small){
+            padding-bottom: 42px;
+        }
     }
     .post-wrapper {
         margin-top: 42px;
         color: #fff;
+        @include breakpoint(ex-small){
+            width: 70%;
+            margin: 0 auto;
+        }
         @include breakpoint(v-ex-small) {
+            width: 100%;
             margin-top: 0;
         }
 
         .news {
-            @include breakpoint(v-ex-small) {
+            @include breakpoint(ex-small) {
                 margin-top: 42px;
             }
+
             time {
                 float: left;
                 font-family: "Maiden Orange", sans-serif;
@@ -52,10 +61,16 @@
                 line-height: 22px;
             }
         }
+        .last{
+            margin-bottom: 84px;
+        }
     }
     .btt {
         position: relative;
         margin: 84px 0 0;
+        @include breakpoint(ex-small){
+            margin: 0 auto;
+        }
     }
     .button {
         position: absolute;
@@ -65,6 +80,9 @@
         color: #5a5045;
         @include transition-property(all);
         @include transition-duration(400ms);
+        @include breakpoint(ex-small) {
+            left: 41%;
+        }
         @include breakpoint(v-ex-small) {
             left: 27%;
         }

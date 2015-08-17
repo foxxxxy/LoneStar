@@ -22,6 +22,13 @@
     .resp-tabs {
         font-size: 0;
         text-align: center;
+        @include breakpoint(ex-small){
+            width: 60% !important;
+            margin: 0 auto !important;
+        }
+        @include breakpoint(v-ex-small){
+            width: 100% !important;
+        }
         .resp-tabs-list {
             display: inline-block;
             margin-top: 44px;
@@ -150,7 +157,12 @@
             }
             @include breakpoint(ex-small) {
                 margin-left: 10px;
-                width: 200px !important;
+                width: 100%;
+            }
+            img{
+                @include breakpoint(ex-small) {
+                    width: 100%;
+                }
             }
         }
         .owl-nav .owl-next, .owl-nav .owl-prev {

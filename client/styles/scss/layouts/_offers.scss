@@ -104,10 +104,14 @@
             }
             p {
                 margin-top: 20px;
-                min-width: 260px;
+                max-width: 260px;
                 font-size: 18px;
                 line-height: 22px;
                 color: #eae3d5;
+                @include breakpoint(ex-small){
+                    padding-top: 20px;
+                    margin: 0 auto;
+                }
             }
         }
     }

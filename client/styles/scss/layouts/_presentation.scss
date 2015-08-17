@@ -72,7 +72,7 @@
             top: 0;
         }
         @include breakpoint(ex-small) {
-            width: 86%;
+            width: 70%;
             padding: 15px;
         }
         @include breakpoint(v-ex-small) {
@@ -88,6 +88,10 @@
                     img {
                         height: 488px;
                     }
+                }
+                @include breakpoint(ex-small){
+                    width: 97%;
+                    height: auto;
                 }
                 .owl-item {
                     img {
@@ -105,6 +109,9 @@
                 width: 100%;
                 float: none;
             }
+            @include breakpoint(ex-small){
+                padding-left: 15px;
+            }
             .share {
                 float: right;
                 figure {
@@ -118,19 +125,19 @@
                         }
                     }
                     img {
-                        width: 51%;
+                        width: 50%;
+                        min-height: 244px;
                         @include breakpoint(large) {
                             height: 244px;
                         }
-                        @include breakpoint(ex-small){
-                        //!!!!!!!!!!!!!!!
-                        }
+
                         @include breakpoint(v-ex-small){
                             width: 94%;
                             margin: 0 15px;
                         }
                     }
                     figcaption {
+                        width: 50%;
                         background: #BC5F15;
                         float: left;
                         max-height: 244px;
