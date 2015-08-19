@@ -193,7 +193,7 @@ body .rd-mobilepanel_title {
   white-space: nowrap;
   text-align: center;
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 81, ../scss/_test.scss */
   body .rd-mobilepanel_title {
     font-size: 18px;
@@ -343,7 +343,7 @@ body .rd-mobilepanel_toggle.active span:after {
     width: 70%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 1, ../scss/components/_separator.scss */
   .separator {
     margin: 23px 0 0 0;
@@ -363,7 +363,7 @@ body .rd-mobilepanel_toggle.active span:after {
     width: 70%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 16, ../scss/components/_separator.scss */
   .thin {
     margin: 4px 0 29px;
@@ -648,7 +648,7 @@ footer .map .information-wrapper {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 57, ../scss/widgets/_footer.scss */
   footer .map .information-wrapper {
-    right: 80px;
+    right: 3%;
   }
 }
 @media (max-width: 767px) {
@@ -755,7 +755,7 @@ footer .map .information-wrapper .contacts a:hover {
 .homepage .presentation .brand {
   margin-top: 68px;
   background: url("../../images/presentation/logo.png") no-repeat top center;
-  min-width: 423px;
+  min-width: 345px;
   padding: 90px 0 75px;
   text-align: center;
 }
@@ -765,7 +765,7 @@ footer .map .information-wrapper .contacts a:hover {
     margin-top: 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 6, ../scss/layouts/_presentation.scss */
   .homepage .presentation .brand {
     background: none;
@@ -808,7 +808,7 @@ footer .map .information-wrapper .contacts a:hover {
   font-family: 'Yellowtail', sans-serif;
   color: #fff;
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 48, ../scss/layouts/_presentation.scss */
   .homepage .presentation .brand p {
     margin-top: 4px;
@@ -830,9 +830,7 @@ footer .map .information-wrapper .contacts a:hover {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 58, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising {
-    position: relative;
-    width: 67%;
-    top: 0;
+    width: 75%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -848,106 +846,134 @@ footer .map .information-wrapper .contacts a:hover {
     padding: 15px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 58, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising {
     width: 100%;
   }
 }
-/* line 85, ../scss/layouts/_presentation.scss */
+/* line 83, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .left-part {
   padding-right: 0;
 }
 @media (min-width: 1200px) {
-  /* line 87, ../scss/layouts/_presentation.scss */
+  /* line 85, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .left-part .carousel1 {
     height: 488px;
   }
-  /* line 91, ../scss/layouts/_presentation.scss */
+  /* line 89, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .left-part .carousel1 img {
     height: 488px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 87, ../scss/layouts/_presentation.scss */
+  /* line 85, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .left-part .carousel1 {
     width: 97%;
     height: auto;
   }
 }
 @media (max-width: 767px) {
-  /* line 87, ../scss/layouts/_presentation.scss */
+  /* line 85, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .left-part .carousel1 {
     width: 97%;
     height: auto;
+    padding-right: 10px;
   }
 }
-@media (max-width: 320px) {
-  /* line 104, ../scss/layouts/_presentation.scss */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 103, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .left-part .carousel1 .owl-item img {
-    max-width: 97%;
+    width: 100%;
+    height: auto;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 103, ../scss/layouts/_presentation.scss */
+  .homepage .presentation .advertising .left-part .carousel1 .owl-item img {
+    max-width: 100%;
     height: auto;
   }
 }
-/* line 113, ../scss/layouts/_presentation.scss */
+@media (max-width: 540px) {
+  /* line 103, ../scss/layouts/_presentation.scss */
+  .homepage .presentation .advertising .left-part .carousel1 .owl-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* line 121, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part {
   padding-left: 0;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* line 113, ../scss/layouts/_presentation.scss */
-  .homepage .presentation .advertising .right-part {
-    width: 100%;
-    float: none;
-  }
-}
 @media (max-width: 767px) {
-  /* line 113, ../scss/layouts/_presentation.scss */
+  /* line 121, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part {
     padding-left: 15px;
   }
 }
-/* line 122, ../scss/layouts/_presentation.scss */
+@media (max-width: 540px) {
+  /* line 121, ../scss/layouts/_presentation.scss */
+  .homepage .presentation .advertising .right-part {
+    padding-left: 0;
+  }
+}
+/* line 130, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share {
   float: right;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 130, ../scss/layouts/_presentation.scss */
+  .homepage .presentation .advertising .right-part .share {
+    float: none;
+    padding-left: 15px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 122, ../scss/layouts/_presentation.scss */
+  /* line 130, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part .share {
     float: none;
     padding: 0 2px 0 15px;
   }
 }
-/* line 128, ../scss/layouts/_presentation.scss */
+/* line 140, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure {
   font-size: 0;
 }
-/* line 131, ../scss/layouts/_presentation.scss */
+/* line 143, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure:last-child img {
   float: left;
 }
-/* line 134, ../scss/layouts/_presentation.scss */
+/* line 146, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure:last-child figcaption {
   background: #567721;
 }
-/* line 138, ../scss/layouts/_presentation.scss */
+/* line 150, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure img {
   width: 50%;
   min-height: 244px;
 }
 @media (min-width: 1200px) {
-  /* line 138, ../scss/layouts/_presentation.scss */
+  /* line 150, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part .share figure img {
     height: 244px;
   }
 }
-@media (max-width: 320px) {
-  /* line 138, ../scss/layouts/_presentation.scss */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 150, ../scss/layouts/_presentation.scss */
+  .homepage .presentation .advertising .right-part .share figure img {
+    max-height: 244px;
+  }
+}
+@media (max-width: 540px) {
+  /* line 150, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part .share figure img {
     width: 94%;
     margin: 0 15px;
   }
 }
-/* line 150, ../scss/layouts/_presentation.scss */
+/* line 165, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption {
   width: 50%;
   background: #BC5F15;
@@ -956,15 +982,15 @@ footer .map .information-wrapper .contacts a:hover {
   padding: 45px 0 33px;
   text-align: center;
 }
-@media (max-width: 320px) {
-  /* line 150, ../scss/layouts/_presentation.scss */
+@media (max-width: 540px) {
+  /* line 165, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part .share figure figcaption {
     width: 94%;
     margin-left: 15px;
     padding: 45px 15px 33px;
   }
 }
-/* line 163, ../scss/layouts/_presentation.scss */
+/* line 178, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 {
   font-family: 'Maiden Orange', sans-serif;
   color: #ffedcb;
@@ -973,38 +999,44 @@ footer .map .information-wrapper .contacts a:hover {
   font-size: 37px;
   line-height: 42px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 178, ../scss/layouts/_presentation.scss */
+  .homepage .presentation .advertising .right-part .share figure figcaption h2 {
+    margin: 0 auto;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 163, ../scss/layouts/_presentation.scss */
+  /* line 178, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part .share figure figcaption h2 {
     margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
-  /* line 163, ../scss/layouts/_presentation.scss */
+  /* line 178, ../scss/layouts/_presentation.scss */
   .homepage .presentation .advertising .right-part .share figure figcaption h2 {
     margin: 0 auto;
   }
 }
-/* line 177, ../scss/layouts/_presentation.scss */
+/* line 195, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 span {
   font-size: 60px;
   line-height: 50px;
   color: #ffe17a;
 }
-/* line 182, ../scss/layouts/_presentation.scss */
+/* line 200, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 span::after {
   content: url("../../images/presentation/separator-03.png");
 }
-/* line 187, ../scss/layouts/_presentation.scss */
+/* line 205, ../scss/layouts/_presentation.scss */
 .homepage .presentation .advertising .right-part .share figure figcaption h2 .steak::after {
   content: url("../../images/presentation/separator-04.png");
 }
-/* line 199, ../scss/layouts/_presentation.scss */
+/* line 217, ../scss/layouts/_presentation.scss */
 .homepage .parallax {
   position: relative;
   overflow: hidden;
 }
-/* line 203, ../scss/layouts/_presentation.scss */
+/* line 221, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_image, .homepage .parallax .parallax_pattern {
   position: absolute;
   top: 0;
@@ -1014,26 +1046,26 @@ footer .map .information-wrapper .contacts a:hover {
   background-position: center center;
   will-change: transform;
 }
-/* line 212, ../scss/layouts/_presentation.scss */
+/* line 230, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_image {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.44;
 }
-/* line 217, ../scss/layouts/_presentation.scss */
+/* line 235, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_pattern {
   background-repeat: repeat;
 }
-/* line 220, ../scss/layouts/_presentation.scss */
+/* line 238, ../scss/layouts/_presentation.scss */
 .homepage .parallax .parallax_cnt {
   position: relative;
 }
-/* line 223, ../scss/layouts/_presentation.scss */
+/* line 241, ../scss/layouts/_presentation.scss */
 .homepage .parallax .overflow {
   overflow: visible;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 223, ../scss/layouts/_presentation.scss */
+  /* line 241, ../scss/layouts/_presentation.scss */
   .homepage .parallax .overflow {
     overflow: hidden;
   }
@@ -1051,7 +1083,7 @@ footer .map .information-wrapper .contacts a:hover {
     text-align: center;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 3, ../scss/layouts/_offers.scss */
   .homepage .offers .features {
     width: 100%;
@@ -1107,33 +1139,39 @@ footer .map .information-wrapper .contacts a:hover {
   opacity: 0.33;
   line-height: 26px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 39, ../scss/layouts/_offers.scss */
+  .homepage .offers .features h2::after {
+    font-size: 29px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 39, ../scss/layouts/_offers.scss */
   .homepage .offers .features h2::after {
     font-size: 22px;
   }
 }
-/* line 52, ../scss/layouts/_offers.scss */
+/* line 55, ../scss/layouts/_offers.scss */
 .homepage .offers .features p {
   font-size: 24px;
   line-height: 28px;
   color: #D4CAB4;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 52, ../scss/layouts/_offers.scss */
+  /* line 55, ../scss/layouts/_offers.scss */
   .homepage .offers .features p {
     font-size: 21px;
   }
 }
-/* line 60, ../scss/layouts/_offers.scss */
+/* line 63, ../scss/layouts/_offers.scss */
 .homepage .offers .features .organic {
   background: #6f6859;
 }
-/* line 63, ../scss/layouts/_offers.scss */
+/* line 66, ../scss/layouts/_offers.scss */
 .homepage .offers .features .organic:hover {
   background-color: #a73f07;
 }
-/* line 68, ../scss/layouts/_offers.scss */
+/* line 71, ../scss/layouts/_offers.scss */
 .homepage .offers h2 {
   font-family: 'Maiden Orange', sans-serif;
   font-size: 40px;
@@ -1142,31 +1180,31 @@ footer .map .information-wrapper .contacts a:hover {
   color: #e7e0d2;
 }
 @media (max-width: 767px) {
-  /* line 68, ../scss/layouts/_offers.scss */
+  /* line 71, ../scss/layouts/_offers.scss */
   .homepage .offers h2 {
     text-align: center;
   }
 }
-/* line 78, ../scss/layouts/_offers.scss */
+/* line 81, ../scss/layouts/_offers.scss */
 .homepage .offers h2 span {
   color: #D5382C;
 }
-/* line 82, ../scss/layouts/_offers.scss */
+/* line 85, ../scss/layouts/_offers.scss */
 .homepage .offers figure {
   text-align: center;
 }
 @media (max-width: 767px) {
-  /* line 82, ../scss/layouts/_offers.scss */
+  /* line 85, ../scss/layouts/_offers.scss */
   .homepage .offers figure {
     margin-bottom: 30px;
   }
 }
-/* line 87, ../scss/layouts/_offers.scss */
+/* line 90, ../scss/layouts/_offers.scss */
 .homepage .offers figure img {
   max-width: 100%;
   height: auto;
 }
-/* line 92, ../scss/layouts/_offers.scss */
+/* line 95, ../scss/layouts/_offers.scss */
 .homepage .offers figure figcaption h3 {
   margin-top: 28px;
   font-family: 'Maiden Orange', sans-serif;
@@ -1175,35 +1213,53 @@ footer .map .information-wrapper .contacts a:hover {
   color: #fbf1cf;
   text-transform: uppercase;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 95, ../scss/layouts/_offers.scss */
+  .homepage .offers figure figcaption h3 {
+    font-size: 27px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 92, ../scss/layouts/_offers.scss */
+  /* line 95, ../scss/layouts/_offers.scss */
   .homepage .offers figure figcaption h3 {
     font-size: 18px;
   }
 }
-/* line 103, ../scss/layouts/_offers.scss */
+/* line 109, ../scss/layouts/_offers.scss */
 .homepage .offers figure figcaption h3::before {
   content: url("../../images/offers/element-1.png");
   padding: 0 5px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 103, ../scss/layouts/_offers.scss */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 109, ../scss/layouts/_offers.scss */
   .homepage .offers figure figcaption h3::before {
     padding: 0;
   }
 }
-/* line 110, ../scss/layouts/_offers.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 109, ../scss/layouts/_offers.scss */
+  .homepage .offers figure figcaption h3::before {
+    padding: 0;
+  }
+}
+/* line 119, ../scss/layouts/_offers.scss */
 .homepage .offers figure figcaption h3::after {
   content: url("../../images/offers/element-1.png");
   padding: 0 5px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 110, ../scss/layouts/_offers.scss */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 119, ../scss/layouts/_offers.scss */
   .homepage .offers figure figcaption h3::after {
     padding: 0;
   }
 }
-/* line 118, ../scss/layouts/_offers.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 119, ../scss/layouts/_offers.scss */
+  .homepage .offers figure figcaption h3::after {
+    padding: 0;
+  }
+}
+/* line 130, ../scss/layouts/_offers.scss */
 .homepage .offers figure figcaption p {
   margin-top: 20px;
   max-width: 260px;
@@ -1212,19 +1268,26 @@ footer .map .information-wrapper .contacts a:hover {
   color: #eae3d5;
 }
 @media (max-width: 767px) {
-  /* line 118, ../scss/layouts/_offers.scss */
+  /* line 130, ../scss/layouts/_offers.scss */
   .homepage .offers figure figcaption p {
     padding-top: 20px;
     margin: 0 auto;
   }
 }
-/* line 134, ../scss/layouts/_offers.scss */
+/* line 146, ../scss/layouts/_offers.scss */
 .homepage .parallax .parallax_image {
   opacity: 1;
 }
 /* line 1, ../scss/layouts/_banner.scss */
 .homepage .banner {
   background: url("../../images/testimonials/content.jpg");
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 3, ../scss/layouts/_banner.scss */
+  .homepage .banner .wow {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 3, ../scss/layouts/_banner.scss */
@@ -1240,13 +1303,13 @@ footer .map .information-wrapper .contacts a:hover {
     margin: 0 auto;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 3, ../scss/layouts/_banner.scss */
   .homepage .banner .wow {
     width: 100%;
   }
 }
-/* line 16, ../scss/layouts/_banner.scss */
+/* line 20, ../scss/layouts/_banner.scss */
 .homepage .banner .left-part {
   position: relative;
   z-index: 10;
@@ -1254,63 +1317,77 @@ footer .map .information-wrapper .contacts a:hover {
   float: left;
   background: #231e13;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 20, ../scss/layouts/_banner.scss */
+  .homepage .banner .left-part {
+    float: none;
+    padding: 15px 15px 14px;
+    text-align: center;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 16, ../scss/layouts/_banner.scss */
+  /* line 20, ../scss/layouts/_banner.scss */
   .homepage .banner .left-part {
     float: none;
     padding: 15px 13px 14px;
   }
 }
 @media (max-width: 767px) {
-  /* line 16, ../scss/layouts/_banner.scss */
+  /* line 20, ../scss/layouts/_banner.scss */
   .homepage .banner .left-part {
     float: none;
   }
 }
-/* line 29, ../scss/layouts/_banner.scss */
+/* line 38, ../scss/layouts/_banner.scss */
 .homepage .banner .left-part .best-place {
   padding: 13px 53px 12px 25px;
   border: 1px solid #6f6859;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 29, ../scss/layouts/_banner.scss */
+  /* line 38, ../scss/layouts/_banner.scss */
   .homepage .banner .left-part .best-place {
-    padding-right: 23px;
+    padding: 13px 23px 12px 25px;
     text-align: center;
   }
 }
 @media (max-width: 767px) {
-  /* line 29, ../scss/layouts/_banner.scss */
+  /* line 38, ../scss/layouts/_banner.scss */
   .homepage .banner .left-part .best-place {
     padding-right: 23px;
     text-align: center;
   }
 }
-/* line 41, ../scss/layouts/_banner.scss */
+/* line 50, ../scss/layouts/_banner.scss */
 .homepage .banner .left-part .best-place figure img {
   opacity: 0.66;
   max-width: 100%;
   height: auto;
 }
-/* line 46, ../scss/layouts/_banner.scss */
+/* line 55, ../scss/layouts/_banner.scss */
 .homepage .banner .left-part .best-place figure figcaption {
   margin: 39px 0 0 40px;
   float: right;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 55, ../scss/layouts/_banner.scss */
+  .homepage .banner .left-part .best-place figure figcaption {
+    float: none;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 46, ../scss/layouts/_banner.scss */
+  /* line 55, ../scss/layouts/_banner.scss */
   .homepage .banner .left-part .best-place figure figcaption {
     float: none;
   }
 }
 @media (max-width: 767px) {
-  /* line 46, ../scss/layouts/_banner.scss */
+  /* line 55, ../scss/layouts/_banner.scss */
   .homepage .banner .left-part .best-place figure figcaption {
     float: none;
     margin: 19px 0 0;
   }
 }
-/* line 56, ../scss/layouts/_banner.scss */
+/* line 68, ../scss/layouts/_banner.scss */
 .homepage .banner .left-part .best-place figure figcaption h3 {
   max-width: 320px;
   font-family: "Maiden Orange", sans-serif;
@@ -1320,25 +1397,25 @@ footer .map .information-wrapper .contacts a:hover {
   color: #D4CAB4;
 }
 @media (max-width: 767px) {
-  /* line 56, ../scss/layouts/_banner.scss */
+  /* line 68, ../scss/layouts/_banner.scss */
   .homepage .banner .left-part .best-place figure figcaption h3 {
     margin: 0 auto;
   }
 }
-/* line 71, ../scss/layouts/_banner.scss */
+/* line 83, ../scss/layouts/_banner.scss */
 .homepage .banner .thumb {
   position: relative;
   display: block;
   float: right;
   overflow: hidden;
 }
-/* line 77, ../scss/layouts/_banner.scss */
+/* line 89, ../scss/layouts/_banner.scss */
 .homepage .banner .thumb img {
   position: relative;
   max-width: 100%;
   height: auto;
 }
-/* line 82, ../scss/layouts/_banner.scss */
+/* line 94, ../scss/layouts/_banner.scss */
 .homepage .banner .thumb::after {
   content: "";
   text-align: center;
@@ -1371,8 +1448,21 @@ footer .map .information-wrapper .contacts a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 94, ../scss/layouts/_banner.scss */
+  .homepage .banner .thumb::after {
+    content: "";
+    left: 50%;
+    top: -10px;
+    width: 58px;
+    height: 58px;
+    margin-top: -30px;
+    margin-left: -29px;
+    padding: 6px 0 0;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 82, ../scss/layouts/_banner.scss */
+  /* line 94, ../scss/layouts/_banner.scss */
   .homepage .banner .thumb::after {
     content: "";
     left: 50%;
@@ -1385,7 +1475,7 @@ footer .map .information-wrapper .contacts a:hover {
   }
 }
 @media (max-width: 767px) {
-  /* line 82, ../scss/layouts/_banner.scss */
+  /* line 94, ../scss/layouts/_banner.scss */
   .homepage .banner .thumb::after {
     content: "";
     left: 50%;
@@ -1397,7 +1487,7 @@ footer .map .information-wrapper .contacts a:hover {
     padding: 6px 0 0;
   }
 }
-/* line 122, ../scss/layouts/_banner.scss */
+/* line 144, ../scss/layouts/_banner.scss */
 .homepage .banner .thumb:hover::after {
   padding: 0;
   content: "";
@@ -1408,8 +1498,18 @@ footer .map .information-wrapper .contacts a:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 144, ../scss/layouts/_banner.scss */
+  .homepage .banner .thumb:hover::after {
+    top: 50%;
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 122, ../scss/layouts/_banner.scss */
+  /* line 144, ../scss/layouts/_banner.scss */
   .homepage .banner .thumb:hover::after {
     top: 50%;
     -moz-transform: rotate(360deg);
@@ -1419,7 +1519,7 @@ footer .map .information-wrapper .contacts a:hover {
   }
 }
 @media (max-width: 767px) {
-  /* line 122, ../scss/layouts/_banner.scss */
+  /* line 144, ../scss/layouts/_banner.scss */
   .homepage .banner .thumb:hover::after {
     top: 50%;
     -moz-transform: rotate(360deg);
@@ -1439,7 +1539,7 @@ footer .map .information-wrapper .contacts a:hover {
     text-align: center;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 1, ../scss/layouts/_testimonials.scss */
   .homepage .testimonials {
     padding: 40px 0 52px;
@@ -1464,7 +1564,7 @@ footer .map .information-wrapper .contacts a:hover {
     padding: 20px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 11, ../scss/layouts/_testimonials.scss */
   .homepage .testimonials .image-border {
     display: block;
@@ -1492,7 +1592,7 @@ footer .map .information-wrapper .contacts a:hover {
     padding: 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 33, ../scss/layouts/_testimonials.scss */
   .homepage .testimonials .name {
     margin-top: 0;
@@ -1508,7 +1608,7 @@ footer .map .information-wrapper .contacts a:hover {
   color: #e7e0d2;
   text-transform: uppercase;
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 48, ../scss/layouts/_testimonials.scss */
   .homepage .testimonials h2 {
     margin-top: 30px;
@@ -1519,7 +1619,7 @@ footer .map .information-wrapper .contacts a:hover {
   content: url("../../images/testimonials/separator-05.png");
   margin: 15px;
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 60, ../scss/layouts/_testimonials.scss */
   .homepage .testimonials h2::before {
     display: none;
@@ -1530,7 +1630,7 @@ footer .map .information-wrapper .contacts a:hover {
   content: url("../../images/testimonials/separator-06.png");
   margin: 15px;
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 67, ../scss/layouts/_testimonials.scss */
   .homepage .testimonials h2::after {
     display: none;
@@ -1551,7 +1651,7 @@ footer .map .information-wrapper .contacts a:hover {
     padding-left: 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 75, ../scss/layouts/_testimonials.scss */
   .homepage .testimonials p {
     width: 98%;
@@ -1609,7 +1709,7 @@ footer .map .information-wrapper .contacts a:hover {
     margin: 0 auto !important;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 22, ../scss/layouts/_menu.scss */
   .homepage .menu .resp-tabs {
     width: 100% !important;
@@ -1835,7 +1935,7 @@ footer .map .information-wrapper .contacts a:hover {
     margin: 0 auto;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 16, ../scss/layouts/_news-block.scss */
   .homepage .news-block .post-wrapper {
     width: 100%;
@@ -1926,7 +2026,7 @@ footer .map .information-wrapper .contacts a:hover {
     left: 41%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   /* line 77, ../scss/layouts/_news-block.scss */
   .homepage .news-block .button {
     left: 27%;

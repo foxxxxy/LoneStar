@@ -44,6 +44,9 @@
                 color: #feddc0;
                 opacity: 0.33;
                 line-height: 26px;
+                @include breakpoint(middle){
+                    font-size: 29px;
+                }
                 @include breakpoint(small) {
                     font-size: 22px;
                 }
@@ -96,6 +99,9 @@
                 line-height: 30px;
                 color: #fbf1cf;
                 text-transform: uppercase;
+                @include breakpoint(middle) {
+                    font-size: 27px;
+                }
                 @include breakpoint(small) {
                     font-size: 18px;
                 }
@@ -103,6 +109,9 @@
                 &::before {
                     content: url("../../images/offers/element-1.png");
                     padding: 0 5px;
+                    @include breakpoint(middle) {
+                        padding: 0;
+                    }
                     @include breakpoint(small) {
                         padding: 0;
                     }
@@ -110,6 +119,9 @@
                 &::after {
                     content: url("../../images/offers/element-1.png");
                     padding: 0 5px;
+                    @include breakpoint(middle) {
+                        padding: 0;
+                    }
                     @include breakpoint(small) {
                         padding: 0;
                     }

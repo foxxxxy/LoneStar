@@ -16,7 +16,7 @@
             @content
         }
     } @else if $point == v-ex-small {
-        @media (max-width: 320px) {
+        @media (max-width: 540px) {
             @content
         }
     }

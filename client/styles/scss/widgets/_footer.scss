@@ -65,7 +65,7 @@ footer {
             text-align: center;
             color: #787765;
             @include breakpoint(middle) {
-                right: 80px;
+                right: 3%;
             }
             @include breakpoint(ex-small) {
                 position: relative;
