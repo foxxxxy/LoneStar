@@ -23,7 +23,7 @@
         padding: 15px 15px 14px;
         float: left;
         background: #231e13;
-        @include breakpoint(middle){
+        @include breakpoint(middle) {
             float: none;
             padding: 15px 15px 14px;
             text-align: center;

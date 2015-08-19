@@ -129,7 +129,7 @@
             }
             .share {
                 float: right;
-                @include breakpoint(middle){
+                @include breakpoint(middle) {
                     float: none;
                     padding-left: 15px;
                 }
@@ -153,7 +153,7 @@
                         @include breakpoint(large) {
                             height: 244px;
                         }
-                        @include breakpoint(middle){
+                        @include breakpoint(middle) {
                             max-height: 244px;
                         }
 

@@ -44,7 +44,7 @@
                 color: #feddc0;
                 opacity: 0.33;
                 line-height: 26px;
-                @include breakpoint(middle){
+                @include breakpoint(middle) {
                     font-size: 29px;
                 }
                 @include breakpoint(small) {
